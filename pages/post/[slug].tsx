@@ -68,7 +68,7 @@ const Post = ({post}: Props) => {
        {/* Comments Section */}
        <hr className='mt-10 max-w-md sm:max-w-2xl my-5 mx-auto border border-[#FF2929]'/>
        {submitted ? (
-        <div className="flex flex-col py-6 my-4 bg-[#FFC017] text-white max-w-2xl mx-auto p-4"> 
+        <div className="flex flex-col py-6 my-4 bg-[#ffffff] text-black max-w-2xl mx-auto p-4 border border-[#FF2929]"> 
               <h1 className='text-2xl sm:text-3xl font-bold'>Thank you for your comment!</h1>
               <p>Your comment will be appeared below, once it has been approved!</p>
         </div>
