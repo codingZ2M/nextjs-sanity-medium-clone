@@ -20,7 +20,7 @@ const PostItem = ({posts}) => {
                 <p className='text-2xl'>{post.title}</p>
                 <p>By {post.author.name}</p>
                 <p>{post.publishedAt }</p>
-                <p className='w-full sm:w-[500px]'>{post.description}</p>
+                <p className='w-full sm:w-[700px]'>{post.description}</p>
               </div>
             </div>
             <div className='w-full'>
