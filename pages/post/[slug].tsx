@@ -41,7 +41,7 @@ const Post = ({post}: Props) => {
        <Header/>
        <img src={urlFor(post.mainImage).url()} alt="" className='w-full h-52 object-cover'/>
        <article className='max-w-5xl mx-auto p-5'>
-            <h1 className='text-3xl mt-10 mb-3'>{post.title}</h1>
+            <h1 className='text-2xl sm:text-3xl mt-10 mb-3'>{post.title}</h1>
             <h2 className='text-xl font-light text-gray-500 mb-2'>{post.description}</h2>
 
             <div className="flex items-center space-x-2">
@@ -66,15 +66,15 @@ const Post = ({post}: Props) => {
        </article>
 
        {/* Comments Section */}
-       <hr className='mt-10 max-w-md sm:max-w-2xl my-5 mx-auto border border-[#FFC017]'/>
+       <hr className='mt-10 max-w-md sm:max-w-2xl my-5 mx-auto border border-[#FF2929]'/>
        {submitted ? (
-        <div className="flex flex-col py-6 my-10 bg-[#FFC017] text-white max-w-2xl mx-auto p-4"> 
-              <h1 className='text-3xl font-bold'>Thank you for your comment!</h1>
+        <div className="flex flex-col py-6 my-4 bg-[#FFC017] text-white max-w-2xl mx-auto p-4"> 
+              <h1 className='text-2xl sm:text-3xl font-bold'>Thank you for your comment!</h1>
               <p>Your comment will be appeared below, once it has been approved!</p>
         </div>
           
        ): (
-        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col p-5 max-w-2xl mx-auto mb-10'>
+        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col p-5 max-w-2xl mx-auto'>
             <span className="text-gray-600">Enjoyed this article?</span>
             <h3 className='text-2xl font-bold mb-3'>Leave a comment below:</h3>
 
@@ -117,20 +117,21 @@ const Post = ({post}: Props) => {
                     <span className='text-red-500'>Comment Field is Required</span>
                 )}
             </div>                   
-             <input type="submit" className="shadow bg-[#FFC017] hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded cursor-pointer"/>       
+             <input type="submit" className="shadow border-2 border-[#FF2929] text-black 
+                bg-[#ffffff] hover:bg-black hover:text-[#ffffff] hover:border-white
+                 font-bold py-2 px-4 cursor-pointer"/>       
         </form>
        )}
        
        {/* Comments Section */}
-       <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto space-y-2' >
-          <h1 className='text-4xl'>Comments</h1>
+       <div className='flex flex-col p-10 max-w-2xl mx-auto ' >
+          <h1 className='text-2xl sm:text-4xl'>Comments</h1>
           <hr className='pb-2'/>
             {post.comments.map( (comment) => (
                 <p>
-                    <span className='text-[#FFC017]'>{comment.name}: </span>
+                    <span className='text-[#FF2929]'>{comment.name}: </span>
                     {comment.comment}
                 </p>
-                
             ))}
        </div>
     </main>

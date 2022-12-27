@@ -15,30 +15,25 @@ export default function Home ({posts}: Props) {
     <div className=''>
 
     {/* Header Container */}
-    <div className="w-ful bg-[#FFC017] h-[650px]">
+    <div className="w-ful bg-[#FFFFFF] h-full">
       <Head>
-        <title>Medium Clone - Next.JS React Sanity Tailwind CSS</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>CODINGZ2M Blog </title>
       </Head>
       
       <Header/>
       
-      <div className="max-w-screen-2xl m-auto  flex justify-between">
-          <div className='flex flex-col space-y-8 space-x-6 sm:space-x-0 max-w-3xl mt-28'>
-              <span className="text-8xl sm:text-9xl  font-serif pl-4">Stay curious.</span>
-              <span className='text-3xl'>
-                Discover stories, thinking, and expertise from writers on any topic.
-              </span>
-              <div className=''>
-                    <span className='text-white text-2xl font-normal bg-black px-14 py-[10px] 
-                          rounded-full'>
-                      Start reading 
-                    </span>
-              </div>
+      <div className="max-w-screen-2xl m-auto  flex justify-between bg-black text-white h-[450px] sm:h-[550px]">
+          <div className='flex flex-col items-start justify-center space-y-8 max-w-3xl font-verdana p-10'>
+              <span className="text-5xl sm:text-6xl sm:font-bold">Get Travel Experiences & Inspirations!</span>
+              <span className='text-xl'>Discover Places, Explore Adventure And Experiences.</span>
+              <span className='text-white text-2xl font-normal border-2 border-[#FF2929] 
+                                px-14 py-[10px] rounded-full'>
+                      Start Exploring 
+               </span>
           </div>
 
           <div className='hidden md:inline-flex mt-0'>
-              <img src="banner.png"/>
+              <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
           </div>
       </div>
 
